@@ -10,6 +10,7 @@ import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Help from "./pages/Help";
+import Gemini from "./pages/Gemini"
 import Contact from "./pages/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -32,6 +33,7 @@ const App = () => {
         />
         <Route path="/home" element={<PrivateRoute element={Home} />} />
         <Route path="/help" element={<PrivateRoute element={Help} />} />
+        <Route path="/gemini" element={<PrivateRoute element={Gemini} />} />
         <Route path="/contact" element={<PrivateRoute element={Contact} />} />
       </Routes>
     </Router>

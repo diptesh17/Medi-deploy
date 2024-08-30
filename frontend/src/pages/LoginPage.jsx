@@ -12,7 +12,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/api/v1/login", {
+      const response = await fetch("https://medicare-backend-i01e.onrender.com/api/v1/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

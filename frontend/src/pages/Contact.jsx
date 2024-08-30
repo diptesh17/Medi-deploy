@@ -40,7 +40,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/api/v1/message", {
+      const response = await fetch("https://medicare-backend-i01e.onrender.com/api/v1/message", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
