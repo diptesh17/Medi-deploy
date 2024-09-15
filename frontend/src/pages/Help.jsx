@@ -12,7 +12,7 @@ const Help = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://medicare-backend-i01e.onrender.com/api/v1/medicines", {
+      const response = await fetch("http://localhost:4000/api/v1/medicines", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
